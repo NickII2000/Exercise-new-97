@@ -519,15 +519,15 @@ window.addEventListener('DOMContentLoaded', () => {
             } else {
                 sex = e.target.getAttribute('id');
             }
+
+            console.log(`ratio = ${ratio}, sex = ${sex}`);
+
+            elements.forEach(elem => {
+                elem.classList.remove(activeClass);
+            });
+
+            e.target.classList.add(activeClass);
         });
-
-        console.log(`ratio = ${ratio}, sex = ${sex}`);
-
-        elements.forEach(elem => {
-            elem.classList.remove(activeClass);
-        });
-
-        e.target.classList.add(activeClass);
     }
 
     getStaticInformation('#gender', 'calculating__choose-item_active');
