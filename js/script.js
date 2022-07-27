@@ -532,4 +532,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     getStaticInformation('#gender', 'calculating__choose-item_active');
     getStaticInformation('.calculating__choose_big', 'calculating__choose-item_active');
+
+    function getDynamicInformation(selector) {
+        const input = document.querySelector(selector);
+
+
+    }
 });
