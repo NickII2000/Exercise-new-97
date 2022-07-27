@@ -536,6 +536,19 @@ window.addEventListener('DOMContentLoaded', () => {
     function getDynamicInformation(selector) {
         const input = document.querySelector(selector);
 
+        input.addEventListener('input', () => {
+            switch (input.getAttribute('id')) {
+                case 'height':
+                    height = +input.value;
+                    break;
+                case 'weight':
+                    weight = +input.value;
+                    break;
+                case 'age':
+                    age = +input.value;
+                    break;
+            }
 
+        });
     }
 });
