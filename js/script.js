@@ -527,6 +527,8 @@ window.addEventListener('DOMContentLoaded', () => {
             });
 
             e.target.classList.add(activeClass);
+
+            calcTotal();
         });
     }
 
@@ -548,7 +550,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     age = +input.value;
                     break;
             }
-
+            calcTotal();
         });
     }
 
