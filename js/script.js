@@ -527,5 +527,9 @@ window.addEventListener('DOMContentLoaded', () => {
             elem.classList.remove(activeClass);
         });
 
+        e.target.classList.add(activeClass);
     }
+
+    getStaticInformation('#gender', 'calculating__choose-item_active');
+    getStaticInformation('.calculating__choose_big', 'calculating__choose-item_active');
 });
