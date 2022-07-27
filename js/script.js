@@ -550,6 +550,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     age = +input.value;
                     break;
             }
+
             calcTotal();
         });
     }
