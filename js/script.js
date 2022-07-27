@@ -515,7 +515,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector(parentSelector).addEventListener('click', (e) => {
             if (e.target.getAttribute('data-ratio')) {
-                ratio = +e.target.get('data-ratio');
+                ratio = +e.target.getAttribute('data-ratio');
             } else {
                 sex = e.target.getAttribute('id');
             }
